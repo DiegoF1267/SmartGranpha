@@ -1,0 +1,189 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px black;
+}
+.header-content{
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1 b{
+    color: #00BCD4;
+}
+.menu{
+    height: 80px;
+}
+.menu nav{
+    height: 100%;
+}
+.menu nav ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+.menu nav ul li{
+    align-items: center;
+    margin: 0px 20px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+.menu-selected-inicio:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #F57C00;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-selected-tutoriales:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #303F9F;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-selected-blog:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #5D4037;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-selected-contacto:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #C2185B;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu nav ul li a{
+    color: black;
+    transition: color 300ms;
+    font-size: 21px;
+}
+.menu nav ul li a:hover{
+    color: #00BCD4;
+}
+.menu .text-menu-selected-inicio{
+    color: #F57C00;
+}
+.menu .text-menu-selected-tutoriales{
+    color: #303F9F;
+}
+.menu .text-menu-selected-blog{
+    color: #5D4037;
+}
+.menu .text-menu-selected-contacto{
+    color: #C2185B;
+}
+.container-cover{
+    position: relative;
+    width: 100%;
+    height: 750px;
+    top: 80px;
+    background-image: url(../IMAGENES/Adulto-mayor-con-nieto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-info-cover{
+    margin: auto;
+    max-width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.container-info-cover h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+    padding-top: 220px;
+}
+.container-info-cover p{
+    color: black;
+    font-size: 30px;
+    font-weight: 300;
+}
+.body{
+    margin-top: 20px;
+}
+
+/* cambie el nombre de el estilo y puse el ref del menu principal en el nav de tutos*/
+
+.container{
+    width:100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.container .card{
+width: 330px;
+height: 430px;
+border-radius: 8px;
+box-shadow: 0 2px 2 px rgba(0, 0,0, 0.2);
+overflow: hidden;
+margin: 20px;
+text-align: center;
+transition: all 0.25s;
+}
+.container .card:hover{
+    transform:translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h5{
+    font-weight: 600;
+}
+ .container .card p{
+     padding: 0 1rem;
+     font-size: 16px;
+     font-weight: 300;
+ }
+ .container .card a{
+     font-weight: 500;
+     text-decoration: none;
+     color: #3498;
+ }
