@@ -12,9 +12,9 @@ namespace SmartGrandPaModel.DTO
         private String nombreTema;
         private String urlImagen;
         private String descripcion;
-        private char idVideo;
-        private char idGuia;
-        private char idMaterialDidactico;
+        private String idVideo;
+        private String idGuia;
+        private String idMaterialDidactico;
 
         public int Id
         {
@@ -68,7 +68,7 @@ namespace SmartGrandPaModel.DTO
             }
         }
 
-        public char IdVideo
+        public string IdVideo
         {
             get
             {
@@ -81,7 +81,7 @@ namespace SmartGrandPaModel.DTO
             }
         }
 
-        public char IdGuia
+        public string IdGuia
         {
             get
             {
@@ -94,7 +94,7 @@ namespace SmartGrandPaModel.DTO
             }
         }
 
-        public char IdMaterialDidactico
+        public string IdMaterialDidactico
         {
             get
             {
