@@ -8,7 +8,7 @@ namespace SmartGrandPaModel.DAL
 {
     public class TemasDALFactory
     {
-        public static ITemasDAL CreateDal()
+        public static ITemasDAL Create()
         {
             return TemasDALArchivos.GetInstancia();
         }

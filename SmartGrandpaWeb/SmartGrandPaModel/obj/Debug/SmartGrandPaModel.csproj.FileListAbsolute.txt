@@ -1,0 +1,6 @@
+C:\Users\Martin\Desktop\SmartGranpha\SmartGrandpaWeb\SmartGrandPaModel\bin\Debug\SmartGrandPaModel.dll
+C:\Users\Martin\Desktop\SmartGranpha\SmartGrandpaWeb\SmartGrandPaModel\bin\Debug\SmartGrandPaModel.pdb
+C:\Users\Martin\Desktop\SmartGranpha\SmartGrandpaWeb\SmartGrandPaModel\obj\Debug\SmartGrandPaModel.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Desktop\SmartGranpha\SmartGrandpaWeb\SmartGrandPaModel\obj\Debug\SmartGrandPaModel.dll
+C:\Users\Martin\Desktop\SmartGranpha\SmartGrandpaWeb\SmartGrandPaModel\obj\Debug\SmartGrandPaModel.pdb
+C:\Users\Martin\Desktop\SmartGranpha\SmartGrandpaWeb\SmartGrandPaModel\bin\Debug\MySql.Data.dll

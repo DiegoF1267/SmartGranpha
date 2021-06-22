@@ -5,9 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using SmartGrandPaModel.DTO;
 using System.Data.SqlClient;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace SmartGrandPaModel.DAL
 {
+
+
     public class TemasDALArchivos : ITemasDAL
     {
         public static List<Tema> temas = new List<Tema>();
@@ -28,10 +32,10 @@ namespace SmartGrandPaModel.DAL
 
         public List<Tema> GetAll()
         {
-            using (SqlConnection conexion = Conectar())
+            using (MySqlConnection conexion = Conectar())
             {
-                SqlCommand comando = new SqlCommand(string.Format("Select idTema, Nombre_tema, Url_imagen_tema, Descripcion_tema, VideoTutorial_idVideoTutorial, GuiaEscrita_idGuiaEscrita, MaterialDidactico_idMaterialDidactico from smartgrandpa"),conexion);
-                SqlDataReader reader = comando.ExecuteReader();
+                MySqlCommand comando = new MySqlCommand(string.Format("Select idTema, Nombre_tema, Url_imagen_tema, Descripcion_tema, VideoTutorial_idVideoTutorial, GuiaEscrita_idGuiaEscrita, MaterialDidactico_idMaterialDidactico from tema"),conexion);
+                MySqlDataReader reader = comando.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -52,9 +56,9 @@ namespace SmartGrandPaModel.DAL
 
         }
 
-            public static SqlConnection Conectar()
+            public static MySqlConnection Conectar()
         {
-            SqlConnection cn = new SqlConnection("SERVER=localhost;DATABASE=smartgrandpa;Integrate security=true");
+            MySqlConnection cn = new MySqlConnection("server=localhost; Uid=root; Password=; Database=smartgrandpa; Port=3306");
             cn.Open();
             return cn;
         }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SmartGrandPaModel.DAL;
+using SmartGrandPaModel.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +13,10 @@ namespace SmartGrandpaWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ITemasDAL dal = TemasDALFactory.Create();
+            List<Tema> temas = dal.GetAll();
+            Repetidor.DataSource = temas;
+            Repetidor.DataBind();
         }
     }
 }
