@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Opciones.aspx.cs" Inherits="SmartGrandpaWeb.Opciones" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Contenido" runat="server">
+            <br> <br> <br> <br> <br> <br>
             <div class="container">
         <div class="card" style="width: 18rem;">
           <a href="tutorialesNetflix/TutorialEscrito.html" class="btn btn-primary"> <img class="card-img-top" src="imagenes/TutorialMano.jpg" alt="Card image cap" height="250" width="260"></a>
