@@ -14,8 +14,7 @@ namespace SmartGrandPaModel.DAL
 
     public class TemasDALArchivos : ITemasDAL
     {
-        public static List<Tema> temas = new List<Tema>();
-
+        //PATRON SINGLETON
         private TemasDALArchivos()
         {
 
@@ -29,9 +28,10 @@ namespace SmartGrandPaModel.DAL
         }
 
 
-
+        //METODO PARA DEVOLVER TODOS LOS TEMAS DE LA BASE DE DATOS
         public List<Tema> GetAll()
         {
+            List<Tema> temas = new List<Tema>();
             using (MySqlConnection conexion = Conectar())
             {
                 MySqlCommand comando = new MySqlCommand(string.Format("Select idTema, Nombre_tema, Url_imagen_tema, Descripcion_tema, VideoTutorial_idVideoTutorial, GuiaEscrita_idGuiaEscrita, MaterialDidactico_idMaterialDidactico from tema"),conexion);
@@ -47,20 +47,67 @@ namespace SmartGrandPaModel.DAL
                     t.IdVideo = reader.GetString(4);
                     t.IdGuia = reader.GetString(5);
                     t.IdMaterialDidactico = reader.GetString(6);
-
                     temas.Add(t);
                 }
+                comando = null;
                 conexion.Close();
+
                 return temas;
             }
 
         }
-
+        //METODO PARA CONECTAR CON LA BASE DE DATOS
             public static MySqlConnection Conectar()
         {
             MySqlConnection cn = new MySqlConnection("server=localhost; Uid=root; Password=; Database=smartgrandpa; Port=3306");
             cn.Open();
             return cn;
         }
+        //METODO PARA FILTRAR POR ID LOS TEMAS
+        public Tema FindById(int id)
+        {
+            List<Tema> temas = GetAll();
+            Tema tema = temas.Find(t => t.Id == id);
+            return tema;
+        }
+        //METODO PARA OBTENENR LAS URLS DE LOS MATERIALES EDUCATIVOS DE LOS TEMAS
+        public List<string> GetUrls(Tema t)
+        {
+            List<String> urls = new List<string>();
+            using (MySqlConnection conexion = Conectar())
+            {
+                MySqlCommand comandoVideo = new MySqlCommand(string.Format("SELECT url from videotutorial where idVideoTutorial = " + t.IdVideo), conexion);
+                MySqlCommand comandoMaterialDidactico = new MySqlCommand(string.Format("SELECT url from materialdidactico where idMaterialDidactico = "+ t.IdMaterialDidactico), conexion);
+                MySqlCommand comandoGuiaEscrita = new MySqlCommand(string.Format("SELECT url from guiaescrita where idGuiaEscrita = "+ t.IdGuia), conexion);
+                String url="";
+                //Se obtiene el video
+                MySqlDataReader reader = comandoVideo.ExecuteReader();
+                while (reader.Read())
+                {
+                    url = reader.GetString(0);
+                }
+                urls.Add(url);
+                //Se obtiene la Guia
+                reader.Close();
+                reader = comandoGuiaEscrita.ExecuteReader();
+                while (reader.Read())
+                {
+                    url = reader.GetString(0);
+                }
+                urls.Add(url);
+                //Se obtiene el Maeterial Didactico
+                reader.Close();
+                reader = comandoMaterialDidactico.ExecuteReader();
+                while (reader.Read())
+                {
+                    url = reader.GetString(0);
+                }
+                urls.Add(url);
+                conexion.Close();
+            }
+            return urls;
+        }
     }
+
+
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartGrandPaModel.DTO
 {
+    //CLASE TEMA QUE REPRESENTA LA TABLA TEMA EN LA BASE DE DATOS
     public class Tema
     {
         private int id;

@@ -3,30 +3,34 @@
             <br> <br> <br> <br> <br> <br>
             <div class="container">
         <div class="card" style="width: 18rem;">
-          <a href="tutorialesNetflix/TutorialEscrito.html" class="btn btn-primary"> <img class="card-img-top" src="imagenes/TutorialMano.jpg" alt="Card image cap" height="250" width="260"></a>
+          <a class="btn btn-primary"> <img class="card-img-top" src="imagenes/TutorialMano.jpg" alt="Card image cap" height="250" width="260"></a>
           <div class="card-body">
             <h5 class="card-title">TUTORIAL ESCRITO</h5>
-            <p class="card-text">Guias sobre netflix</p>
-            <a href="#" class="btn btn-primary">Guias Esctritas sobre netflix</a>
           </div>
+                        <div class="card-footer">
+                <asp:Button runat="server" ID="EscritoBtn" CssClass="btn btn-dark" Text="Comenzar" OnClick="EscritoBtn_Click"/>
+            </div>
         </div>
   
         <div class="card" style="width: 18rem;">
-          <a href="tutorialesNetflix/VideoTutorial.html" class="btn btn-primary">  <img class="card-img-top" src="imagenes/VideoTutorial.png" alt="Card image cap" height="250" width="260"></a>
+          <a class="btn btn-primary">  
+          <img class="card-img-top" src="imagenes/VideoTutorial.png" alt="Card image cap" height="250" width="260"></a>
           <div class="card-body">
             <h5 class="card-title">VIDEO TUTORIAL</h5>
-            <p class="card-text">Guias sobre Netflix</p>
-            <a href="#" class="btn btn-primary">Guias video tutoriales de Netflix</a>
           </div>
+            <div class="card-footer">
+                <asp:Button runat="server" ID="VideoBtn" CssClass="btn btn-dark" Text="Comenzar" OnClick="VideoBtn_Click"/>
+            </div>
         </div>
   
-        <div class="card" style="width: 18rem;">
-          <a href="#" class="btn btn-primary">  <img class="card-img-top" src="imagenes/diseño-interactivo1.gif" alt="Card image cap" height="250" width="260"></a>
+        <div  class="card" style="width: 18rem;">
+          <a class="btn btn-primary">  <img class="card-img-top" src="imagenes/diseño-interactivo1.gif" alt="Card image cap" height="250" width="260"></a>
           <div class="card-body">
-            <h5 class="card-title">TUTORIAL INTERACTIVO</h5>
-            <p class="card-text">Guias sobre netflix</p>
-            <a href="#" class="btn btn-primary">Guias interactivas de netflix</a>
+            <h5 class="card-title">TUTORIAL DIDACTICO</h5>
           </div>
+                        <div class="card-footer">
+                <asp:Button runat="server" ID="DidacticoBtn" CssClass="btn btn-dark" Text="Comenzar" OnClick="DidacticoBtn_Click"/>
+            </div>
         </div>
       </div>
 </body>

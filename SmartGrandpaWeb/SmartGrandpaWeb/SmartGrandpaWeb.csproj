@@ -157,6 +157,12 @@
       <DependentUpon>TutorialVideo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartGrandPaModel\SmartGrandPaModel.csproj">
+      <Project>{0710c77b-6b80-48b3-9af3-38a89b3a4b41}</Project>
+      <Name>SmartGrandPaModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

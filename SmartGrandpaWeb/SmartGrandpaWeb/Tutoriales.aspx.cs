@@ -11,12 +11,15 @@ namespace SmartGrandpaWeb
 {
     public partial class Tutoriales : System.Web.UI.Page
     {
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             ITemasDAL dal = TemasDALFactory.Create();
             List<Tema> temas = dal.GetAll();
             Repetidor.DataSource = temas;
             Repetidor.DataBind();
+
         }
     }
 }
