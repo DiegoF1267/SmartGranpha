@@ -19,7 +19,7 @@ header {
 }
 
 .header-content {
-    margin: auto;
+        margin: auto;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -58,6 +58,7 @@ header {
                 justify-content: center;
                 position: relative;
             }
+
 
 .menu-selected-inicio:before {
     content: '';
@@ -163,9 +164,10 @@ header {
         font-weight: 300;
     }
 
-.body {
-    margin-top: 20px;
+body {
+    margin-top: 200px;
 }
+
 
 /* cambie el nombre de el estilo y puse el ref del menu principal en el nav de tutos*/
 
@@ -219,6 +221,7 @@ header {
 footer {
     position: absolute;
     background: #00BCD4;
+
     height: auto;
     width: 100vw;
     font-family: 'Open Sans';
@@ -335,7 +338,9 @@ article {
         width: 100%;
         margin-top: 20px;
     }
-/* botton */
+
+
+/* boton */
 .boton1 button {
 
 }

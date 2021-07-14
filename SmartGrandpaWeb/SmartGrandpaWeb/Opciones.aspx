@@ -9,7 +9,6 @@
     <br>
     <div class="container">
         <div class="card" style="width: 18rem;">
-            <a class="btn btn-primary">
                 <img class="card-img-top" src="imagenes/TutorialMano.jpg" alt="Card image cap" height="250" width="260"></a>
             <div class="card-body">
                 <h5 class="card-title">TUTORIAL ESCRITO</h5>
@@ -20,7 +19,6 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <a class="btn btn-primary">
                 <img class="card-img-top" src="imagenes/VideoTutorial.png" alt="Card image cap" height="250" width="260"></a>
             <div class="card-body">
                 <h5 class="card-title">VIDEO TUTORIAL</h5>
@@ -31,7 +29,6 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <a class="btn btn-primary">
                 <img class="card-img-top" src="imagenes/diseño-interactivo1.gif" alt="Card image cap" height="250" width="260"></a>
             <div class="card-body">
                 <h5 class="card-title">TUTORIAL DIDACTICO</h5>

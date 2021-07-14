@@ -2,14 +2,22 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Contenido" runat="server">
 
-    <div class="boton1">
-        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    </div>
-    <div class="boton2">
+    <div class="container">
+     <div>
         <button type="button" class="btn btn-primary btn-lg">Large button</button>
-
     </div>
+    <div>
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    </div>
+    </div>
+
 
 
 
