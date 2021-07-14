@@ -41,8 +41,8 @@
                         <ul>
                             <li class="menu-selected-inicio"><a href="Default.aspx" class="text-menu-selected-inicio">Inicio</a></li>
                             <li class="menu-selected-tutoriales"><a href="Tutoriales.aspx" class="text-menu-selected-tutoriales">Tutoriales</a></li>
-                            <li class="menu-selected-blog"><a href="./blog.html" class="text-menu-selected-blog">Blog</a></li>
-                            <li class="menu-selected-contacto"><a href="./contacto.html" class="text-menu-selected-contacto">Contacto</a></li>
+                            <li class="menu-selected-blog"><a href="blog.aspx" class="text-menu-selected-blog">Sobre nosotros</a></li>
+                            <li class="menu-selected-contacto"><a href="contacto.aspx" class="text-menu-selected-contacto">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>

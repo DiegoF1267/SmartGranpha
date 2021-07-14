@@ -63,3 +63,6 @@ C:\Users\Martin\Desktop\Proyectos VS\SmartGranpha\SmartGrandpaWeb\SmartGrandpaWe
 C:\Users\Martin\Desktop\Proyectos VS\SmartGranpha\SmartGrandpaWeb\SmartGrandpaWeb\bin\MySql.Data.dll
 C:\Users\Martin\Desktop\Proyectos VS\SmartGranpha\SmartGrandpaWeb\SmartGrandpaWeb\bin\SmartGrandPaModel.pdb
 C:\Users\Martin\Desktop\Proyectos VS\SmartGranpha\SmartGrandpaWeb\SmartGrandpaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Diego\OneDrive\Escritorio\SmartGranpha\SmartGrandpaWeb\SmartGrandpaWeb\bin\SmartGrandPaModel.dll
+C:\Users\Diego\OneDrive\Escritorio\SmartGranpha\SmartGrandpaWeb\SmartGrandpaWeb\bin\MySql.Data.dll
+C:\Users\Diego\OneDrive\Escritorio\SmartGranpha\SmartGrandpaWeb\SmartGrandpaWeb\bin\SmartGrandPaModel.pdb
