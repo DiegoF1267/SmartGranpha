@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -80,7 +81,6 @@
     <Content Include="blog.aspx" />
     <Content Include="contacto.aspx" />
     <Content Include="css\Estilo.css" />
-    <Content Include="css\estilos1.css" />
     <Content Include="Default.aspx" />
     <Content Include="imagenes\3-extensiones-para-ser-más-productivo-con-Gmail-00-1280x720.jpg" />
     <Content Include="imagenes\450_1000.jpg" />
