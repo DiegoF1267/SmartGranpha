@@ -8,9 +8,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="/contacto.css">
+        <link rel="stylesheet" href="css/contacto.css">
     </head>
     <body>
+        <br />
         <form action="">
             <h2>Formulario de Contacto</h2>
             <input type="text" name="nombre" placeholder="Nombre">
