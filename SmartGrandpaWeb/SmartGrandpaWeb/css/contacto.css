@@ -1,0 +1,56 @@
+﻿body {
+    background-image: url(adulto-mayor-con-nieto.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
+}
+
+form {
+    border-radius: 7px;
+    width: 450px;
+    margin: auto;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    border: none;
+    font-size: 17px;
+}
+
+textarea {
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#boton {
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+    #boton:hover {
+        cursor: pointer;
+    }
+
+@media (max-width:480px) {
+    form {
+        width: 100%;
+    }
+}
